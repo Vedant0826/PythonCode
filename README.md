@@ -1,1 +1,1 @@
-This Repository Contains Some Python Scripts And Code
+This Repository Contains Some Shity Python Scripts And Code
