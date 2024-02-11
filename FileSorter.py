@@ -28,24 +28,30 @@ if __name__ == "__main__":
             
             if item.endswith(file_ext):
                     shutil.move(DOWNLOADS_FOLDER + item, DOCUMENTS_FOLDER)
-                    sleep()
+                    sleep(1)
             
             if item.endswith(video_ext):
                     shutil.move(DOWNLOADS_FOLDER + item, VIDEOS_FOLDER)
+                    sleep(1)
             
             if item.endswith(music_ext):
                     shutil.move(DOWNLOADS_FOLDER + item, MUSIC_FOLDER)
+                    sleep(1)
 
             if item.endswith(image_ext):
                     shutil.move(DOWNLOADS_FOLDER + item, PICTURES_FOLDER)
+                    sleep(1)
 
             else:
                 if not os.path.exists(PERSONAL_FOLDER):
                         print("no")
                         os.makedirs(PERSONAL_FOLDER)
                         shutil.move(DOWNLOADS_FOLDER + item, PERSONAL_FOLDER)      
+                        sleep(1)
+
                 else:
-                      shutil.move(DOWNLOADS_FOLDER + item, PERSONAL_FOLDER)      
+                      shutil.move(DOWNLOADS_FOLDER + item, PERSONAL_FOLDER)
+                      sleep(1)
 
 
     else:
